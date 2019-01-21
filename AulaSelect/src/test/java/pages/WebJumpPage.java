@@ -33,23 +33,23 @@ public class WebJumpPage {
 
 		if (wait.until(ExpectedConditions.invisibilityOf(botao1))) {
 			System.out.println(
-					"Bot„o One Invisivel"); /*
+					"Bot√£o One Invisivel"); /*
 											 * Se o elemento estiver visivel na
-											 * tela o codigo falha apÛs o tempo
-											 * de exceÁ„o da variavel wait, pois
+											 * tela o codigo falha ap√≥s o tempo
+											 * de exce√ß√£o da variavel wait, pois
 											 * dentro da clausula
-											 * ExpectedCondition, È v·lido
+											 * ExpectedCondition, √© v√°lido
 											 * somente se o elemento estiver de
-											 * acordo com as condiÁıes.
+											 * acordo com as condi√ß√µes.
 											 */
 		}
 
 		if (wait.until(ExpectedConditions.invisibilityOf(botao2))) {
-			System.out.println("Bot„o Two Invisivel");
+			System.out.println("Bot√£o Two Invisivel");
 		}
 
 		if (wait.until(ExpectedConditions.invisibilityOf(botaofour))) {
-			System.out.println("Bot„o Four Invisivel");
+			System.out.println("Bot√£o Four Invisivel");
 		}
 	}
 
@@ -66,15 +66,15 @@ public class WebJumpPage {
 		botaofour.click();
 
 		if (wait.until(ExpectedConditions.invisibilityOf(botao1))) {
-			System.out.println("Bot„o One IFrame Invisivel");
+			System.out.println("Bot√£o One IFrame Invisivel");
 		}
 
 		if (wait.until(ExpectedConditions.invisibilityOf(botao2))) {
-			System.out.println("Bot„o Two IFrame Invisivel");
+			System.out.println("Bot√£o Two IFrame Invisivel");
 		}
 
 		if (wait.until(ExpectedConditions.invisibilityOf(botaofour))) {
-			System.out.println("Bot„o Four IFrame Invisivel");
+			System.out.println("Bot√£o Four IFrame Invisivel");
 		}
 	}
 
@@ -93,10 +93,10 @@ public class WebJumpPage {
 		if (wait.until(
 				ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/div/div[2]/div[3]/div/div[2]/img[4]")))
 				.isDisplayed()) {
-			System.out.println("Imagem Selenium WebDriver est· presente na DOM");
+			System.out.println("Imagem Selenium WebDriver est√° presente na DOM");
 		} else {
-			System.out.println("Imagem Selenium WebDriver n„o est· presente na DOM");
-		}
+			System.out.println("Imagem Selenium WebDriver n√£o est√° presente na DOM");
+		}// A clausula presenceOfElementLocated, √© utilizada para validar um elemento na DOM a partir do seu locator, isDisplayed retorna um valor booleano definindo a visibilidade do mesmo.
 
 	}
 
